@@ -1,0 +1,8 @@
+.signup{
+    background-image: url(../../../public/images/bannerbackground.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 100px;
+}

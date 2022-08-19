@@ -1,0 +1,34 @@
+.header{
+    padding: 10px 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.logo{
+    width: 160px;
+}
+
+.nav-login{
+    text-decoration: none;
+    color: black;
+}
+.nav-login:hover{
+    color: rgb(209, 49, 76);
+    font-weight: bolder;
+}
+.nav-signup{
+    text-decoration: none;
+    background-color: rgb(209, 49, 76);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.nav-signup:hover{
+    background-color: black;
+    color:  white ;
+}
+.cart:hover{
+    color:  rgb(209, 49, 76);
+    font-weight: bolder;
+}

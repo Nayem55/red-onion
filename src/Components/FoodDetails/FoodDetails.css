@@ -1,0 +1,16 @@
+.details  {
+    margin: 4% 10%;
+}
+.cart-btn{
+    background-color: rgb(209, 49, 76);
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    width: 120px;
+}
+.cart-btn:hover{
+    background-color: white;
+    border: 1px solid rgb(209, 49, 76);
+    color: rgb(209, 49, 76);
+}
