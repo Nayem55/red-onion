@@ -28,7 +28,7 @@
     background-color: black;
     color:  white ;
 }
-.cart:hover{
+.header-cart:hover{
     color:  rgb(209, 49, 76);
     font-weight: bolder;
 }

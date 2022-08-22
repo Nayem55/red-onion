@@ -9,7 +9,7 @@ const Lunch = () => {
         <div className='bf-container'>
             {
                 Lunch.map(item=>
-                <div className='breakfast'>
+                <div key={item.id} className='breakfast'>
                     <img className='bf-img img-fluid' src={item.image} alt="" />
                     <h4 className='mt-3'>{item.name}</h4>
                     <h5 className='mt-3'>${item.price}</h5>

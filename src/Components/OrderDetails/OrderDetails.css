@@ -1,0 +1,53 @@
+.orderDetails{
+    margin: 4% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.delivery{
+    width: 50%;
+}
+.delivery input{
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(128, 128, 128, 0.253);
+}
+.delivery input:focus{
+    outline-color:  rgb(209, 49, 76);
+}
+.delivery .submit{
+    background-color: rgb(209, 49, 76);
+    color: white;
+}
+.delivery .submit:hover{
+    background-color: white;
+    border: 1px solid rgb(209, 49, 76);
+    color: rgb(209, 49, 76);
+}
+.cart{
+    width: 30%;
+}
+.cart-summary{
+    margin: 15px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.place-btn{
+    background-color: rgb(209, 49, 76);
+    color: white;
+    margin: 0 15px;
+    padding: 5px;
+    border: none;
+    width: 90%;
+    border-radius: 8px;
+
+}
+.place-btn:hover{
+    background-color: white;
+    border: 1px solid rgb(209, 49, 76);
+    color: rgb(209, 49, 76);
+}
+
+

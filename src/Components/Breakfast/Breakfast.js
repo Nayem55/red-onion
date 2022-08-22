@@ -10,7 +10,7 @@ const Breakfast = () => {
         <div className='bf-container'>
             {
                 BfItems.map(item=>
-                <div className='breakfast'>
+                <div key={item.id} className='breakfast'>
                     <img className='bf-img' src={item.image} alt="" />
                     <h4 className='mt-3'>{item.name}</h4>
                     <h5 className='mt-3'>${item.price}</h5>

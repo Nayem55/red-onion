@@ -1,0 +1,18 @@
+.displayCart{
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.253);
+    border-radius: 8px;
+}
+.displayCart img{
+    width: 60px;
+}
+.displayCart p{
+    font-size: small;
+    margin: 5px;
+    color:rgba(0, 0, 0, 0.747);
+}
+.displayCart h6{
+    margin-left: 5px;
+    color: rgb(209, 49, 76);
+}
