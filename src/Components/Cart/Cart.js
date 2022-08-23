@@ -6,8 +6,9 @@ const Cart = ({ item }) => {
       <div className="displayCart d-flex">
         <img src={item.image} alt="" />
         <div className="d-flex flex-column">
-          <p>{item.name}</p>
-          <h6>${item.price}</h6>
+          <p className="mb-0">{item.name}</p>
+          <p className="mt-0">Quantity : {item.quantity}</p>
+          <h6>${item.price*item.quantity}</h6>
         </div>
       </div>
   );
