@@ -5,6 +5,17 @@ import "./OrderDetails.css";
 
 const OrderDetails = () => {
   const [cart] = useCart();
+  let price = 0;
+  let shipping = 0;
+  let quantity = 0;
+  let tax = 0;
+
+  cart.forEach((product) => {
+    quantity = quantity + product.quantity;
+    price = price + product.price * product.quantity;
+    shipping = shipping + 1 * product.quantity;
+    tax = tax + 2 * product.quantity;
+  });
   return (
     <div className="orderDetails">
       <div className="delivery">
@@ -35,11 +46,11 @@ const OrderDetails = () => {
             <p>Delivery fee</p>
             <p>Total</p>
           </div>
-          <div>
-            <p>$</p>
-            <p>$</p>
-            <p>$</p>
-            <p>$</p>
+          <div className="total">
+            <p>$ {price}</p>
+            <p>$ {tax}</p>
+            <p>$ {shipping}</p>
+            <p>$ {price+tax+shipping}</p>
           </div>
         </div>
         <button className="place-btn">Place Order</button>

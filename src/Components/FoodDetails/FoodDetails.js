@@ -29,15 +29,6 @@ const FoodDetails = () => {
       //   localStorage.removeItem("shopping-cart");
       //   setCart([]);
       // };
-      // let price = 0;
-      // let shipping = 0;
-      // let quantity = 0;
-    
-      // cart.forEach((product) => {
-      //   quantity = quantity + product.quantity;
-      //   price = price + product.price * product.quantity;
-      //   shipping = shipping + product.shipping * product.quantity;
-      // });
  
     return (
         <div className='details d-flex'>
