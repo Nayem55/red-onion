@@ -23,16 +23,16 @@ const Header = () => {
         </button>
       </div>
         <div className={`navlink ${open ? "show" : "hide" }`}>
-          <Link to="/cart" className="mx-2 header-cart">
+          <Link onClick={()=>setOpen(false)} to="/cart" className="mx-2 header-cart">
             {" "}
             <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
           </Link>
 
-          <Link className="nav-login mx-3" to="/">
+          <Link onClick={()=>setOpen(false)} className="nav-login mx-3" to="/">
             Home
           </Link>
           {user ? (
-            <Link
+            <Link 
               onClick={handleSignOut}
               className="nav-signup mx-3"
               to="/login"
@@ -40,12 +40,12 @@ const Header = () => {
               Log out
             </Link>
           ) : (
-            <Link className="nav-login mx-3" to="/login">
+            <Link onClick={()=>setOpen(false)} className="nav-login mx-3" to="/login">
               Login
             </Link>
           )}
           {!user && (
-            <Link className="nav-signup mx-3" to="/signup">
+            <Link onClick={()=>setOpen(false)} className="nav-signup mx-3" to="/signup">
               Sign up
             </Link>
           )}
