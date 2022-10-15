@@ -17,7 +17,7 @@ function App() {
     <div>
       <Header></Header>
       {
-        location.pathname==="/signup"? <Signup></Signup> : location.pathname==="/login"? <Login></Login> :<Home></Home>
+        location.pathname==="/signup"? <Signup></Signup> : location.pathname==="/login"? <Login></Login> : location.pathname==="/cart"? <OrderDetails></OrderDetails>:<Home></Home>
       }
      
       <Routes>
@@ -25,7 +25,6 @@ function App() {
         <Route path="/breakfast" element={<Breakfast></Breakfast>}></Route>
         <Route path="/lunch" element={<Lunch></Lunch>}></Route>
         <Route path="/dinner" element={<Dinner></Dinner>}></Route>
-        <Route path="/cart" element={<OrderDetails></OrderDetails>}></Route>
         <Route
           path="/breakfast/:foodID"
           element={<FoodDetails></FoodDetails>}

@@ -4,7 +4,8 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 400px;
+  height: 60vh;
+  width: 100%;
   padding-top: 100px;
 }
 .search-text {
@@ -61,4 +62,28 @@
 .active{
     color: rgb(209, 49, 76);
     font-weight: bolder;
+}
+@media (max-width: 991px) {
+  .search {
+    height: 40vh;
+    padding-top: 200px;
+  }
+  .search-text {
+    width: 35%;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  .search {
+    height: 40vh;
+    padding-top: 100px;
+  }
+  .search h2{
+    font-size: 20px;
+  }
+  
+  .search-text {
+    width: 45%;
+  }
 }

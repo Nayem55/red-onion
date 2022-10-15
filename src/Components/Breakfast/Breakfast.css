@@ -27,3 +27,16 @@
     color: rgb(209, 49, 76) ;
 
 }
+@media (max-width: 991px){
+    .bf-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr) ;
+    }
+}
+
+@media (max-width: 700px){
+    .bf-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr) ;
+    }
+}

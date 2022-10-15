@@ -1,5 +1,6 @@
 .orderDetails {
   margin: 4% 10%;
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,4 +56,15 @@
 .total p {
   color: rgb(209, 49, 76);
   font-weight: bold;
+}
+
+@media (max-width : 700px) {
+  .orderDetails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .delivery {
+    width: 100%;
+  }
 }
