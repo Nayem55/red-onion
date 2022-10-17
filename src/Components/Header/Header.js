@@ -7,13 +7,21 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 import auth from "../../firebase.init";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState(0);
   const [user] = useAuthState(auth);
   const handleSignOut = () => {
     signOut(auth);
   };
+  window.addEventListener("scroll", ()=>{
+    setScroll(window.scrollY)
+  })
+  useEffect(()=>{
+    setOpen(false);
+  },[scroll])
   return (
     <div className="header fixed-top">
       <div className="menu">

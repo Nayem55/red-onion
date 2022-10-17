@@ -14,3 +14,28 @@
     border: 1px solid rgb(209, 49, 76);
     color: rgb(209, 49, 76);
 }
+.details-img-mobile{
+    display: none !important;
+}
+.details-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+@media (max-width: 700px) {
+    .details-content{
+        width: 100vw;
+    }
+    .details-img-mobile{
+        display: block !important;
+        width: 250px !important;
+        margin: 0 auto;
+    }
+    .details-img{
+        display: none !important;
+    }
+    .details-content{
+        width: 80%;
+    }
+}
