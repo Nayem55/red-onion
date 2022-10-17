@@ -19,7 +19,7 @@ const Header = () => {
       <div className="menu">
         <img className="logo" src="/images/logo2.png" alt="" />
         <button onClick={() => setOpen(!open)} className="bar-button">
-          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faBars}></FontAwesomeIcon>
         </button>
       </div>
         <div className={`navlink ${open ? "show" : "hide" }`}>

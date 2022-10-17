@@ -28,7 +28,7 @@ const Login = () => {
           <input type="email" name="email" ref={emailRef} placeholder="Email" required/>
           <input type="password" name="password" ref={passRef} placeholder="Password" required />
           <input type="submit" className="signup-btn" value="Login" />
-          <Link className="mt-0" to="/signup">Don't have an account?</Link>
+          <p className="text-center">Don't have an account? <Link className="mt-0" to="/signup">Sign up</Link> </p>
           <p className="text-center" style={{ color: "red" }}>
             {error?.message}
           </p>

@@ -53,9 +53,9 @@ const Signup = () => {
             required
           />
           <input type="submit" className="signup-btn" value="Sign up" />
-          <Link className="mt-0" to="/login">Already have an account? </Link>
+          <p className="text-center">Already have an account? <Link className="mt-0" to="/login">Login</Link> </p>
           {
-            error?<p className="text-center mt-1" style={{color:"red"}}>{error?.message}</p> :  <p className="text-center mt-1" style={{color:"red"}}>{passError}</p>
+            error?<p className="text-center mt-1 " style={{color:"red"}}>{error?.message}</p> :  <p className="text-center mt-1" style={{color:"red"}}>{passError}</p>
           }
         </div>
       </form>
