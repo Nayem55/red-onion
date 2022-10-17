@@ -14,19 +14,6 @@
     width: 200px;
     height: 200px;
 }
-.bf-btn{
-    border: 1px solid  rgb(209, 49, 76);
-    padding: 0 20px;
-    background-color:rgb(209, 49, 76) ;
-    color: white;
-    border-radius: 10px;
-}
-.bf-btn:hover{
-    border: 1px solid  rgb(209, 49, 76);
-    background-color: white;
-    color: rgb(209, 49, 76) ;
-
-}
 @media (max-width: 991px){
     .bf-container{
         display: grid;

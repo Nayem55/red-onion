@@ -4,6 +4,9 @@
     background-color: rgba(128, 128, 128, 0.253);
     border-radius: 8px;
     width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .displayCart img{
     width: 60px;
@@ -16,4 +19,11 @@
 .displayCart h6{
     margin-left: 5px;
     color: rgb(209, 49, 76);
+}
+.delete-icon{
+    color: rgb(209, 49, 76);
+}
+.delete-icon:hover{
+    color: black;
+    cursor: pointer;
 }

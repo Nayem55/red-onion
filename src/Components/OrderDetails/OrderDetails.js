@@ -1,10 +1,16 @@
 import React from "react";
 import useCart from "../../CustomHooks/useCart";
+import { removeFromDb } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import "./OrderDetails.css";
 
 const OrderDetails = () => {
-  const [cart] = useCart();
+  const [cart, setCart]  = useCart();
+  const handleRemove=(item)=>{
+    const rest = cart.filter((food) => food.id !== item.id);
+    setCart(rest);
+    removeFromDb(item.id);
+  }
   let price = 0;
   let shipping = 0;
   let quantity = 0;
@@ -36,7 +42,7 @@ const OrderDetails = () => {
       </div>
       <div className="cart">
         {cart.map((item) => (
-          <Cart item={item}></Cart>
+          <Cart handleRemove={handleRemove} item={item}></Cart>
         ))}
 
         <div className="d-flex justify-content-between cart-summary">
