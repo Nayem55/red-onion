@@ -5,12 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import useCart from "../../CustomHooks/useCart";
 import { addToDb } from "../../utilities/fakedb";
+import { useState } from "react";
 const FoodDetails = () => {
   const [foods] = useFood();
   const [cart, setCart] = useCart();
+  const [showAddedText, setshowAddedText] = useState(false);
   let { foodID } = useParams();
   const foodDetails = foods.find((food) => foodID == food?.id);
-
+  
   const handleCart = () => {
     let newCart = [];
     const exist = cart.find((product) => product.id === foodDetails.id);
@@ -24,10 +26,14 @@ const FoodDetails = () => {
     }
     setCart(newCart);
     addToDb(foodDetails.id);
+    setshowAddedText(true);
+    setTimeout(()=>{setshowAddedText(false)},1000)
+  
   };
 
   return (
-    <div className="details d-flex">
+    <div>
+          <div className="details d-flex">
       <div className=" details-content">
         <h1>{foodDetails?.name}</h1>
         <p>{foodDetails?.description}</p>
@@ -44,6 +50,9 @@ const FoodDetails = () => {
         <img className="img-fluid w-75" src={foodDetails?.image} alt="" />
       </div>
     </div>
+    <p className={`added-text ${showAddedText?"showAddedText":"hideAddedText"}`}>Added to Cart</p>
+    </div>
+  
   );
 };
 

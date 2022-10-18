@@ -13,7 +13,7 @@ const Dinner = () => {
           <h4 className="mt-3">{item.name}</h4>
           <h5 className="mt-3">${item.price}</h5>
           <button
-            onClick={() => navigate(`/breakfast/${item.id}`)}
+            onClick={() => navigate(`/dinner/${item.id}`)}
             className="cart-btn mb-5"
           >
             Details
