@@ -13,11 +13,9 @@ const OrderDetails = () => {
   }
   let price = 0;
   let shipping = 0;
-  let quantity = 0;
   let tax = 0;
 
   cart.forEach((product) => {
-    quantity = quantity + product.quantity;
     price = price + product.price * product.quantity;
     shipping = shipping + 1 * product.quantity;
     tax = tax + 2 * product.quantity;

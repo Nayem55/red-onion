@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Home = () => {
+  const location = useLocation();
   return (
     <div className="home">
       <div className="search">
@@ -32,7 +33,7 @@ const Home = () => {
         {({ isActive }) => (
               <span
                 className={
-                  isActive ? "active" : undefined
+                  isActive || location.pathname==="/" ? "active" : undefined
                 }
               >
                 Lunch

@@ -6,8 +6,7 @@ import { faCartPlus, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 import auth from "../../firebase.init";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState,useEffect } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);

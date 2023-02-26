@@ -13,6 +13,19 @@ const addToDb = id =>{
     localStorage.setItem('food-cart', JSON.stringify(shoppingCart));
 }
 
+const reduceFromDb = id =>{
+    const shoppingCart= getStoredCart()
+    // reduce quantity
+    const quantity = shoppingCart[id];
+    if(quantity>1){
+        const newQuantity = quantity - 1;
+        shoppingCart[id] = newQuantity;
+    }
+
+    localStorage.setItem('food-cart', JSON.stringify(shoppingCart));
+}
+
+
 const getStoredCart=()=>{
     let shoppingCart = {};
 
@@ -42,6 +55,7 @@ const deleteShoppingCart = () =>{
 
 export {
     addToDb, 
+    reduceFromDb,
     getStoredCart,
     removeFromDb,
     deleteShoppingCart

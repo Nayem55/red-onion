@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 90vh;
 }
 .delivery {
   width: 50%;
@@ -47,6 +48,7 @@
   border: none;
   width: 280px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 .place-btn:hover {
   background-color: white;
